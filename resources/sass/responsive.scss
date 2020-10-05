@@ -1,0 +1,327 @@
+@media only screen and (max-width: 768px) {
+    @mixin my-auto {
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+    }
+
+    @mixin mx-auto {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    @mixin px($value){
+        padding-left: $value !important;
+        padding-right: $value !important;
+    }
+
+    @mixin py($value){
+        padding-top: $value !important;
+        padding-bottom: $value !important;
+    }
+
+    $pink-soft: #FCF8F0;
+    $pink-medium: #FEF6E8;
+    $red: #F3795C;
+    $red-dark: #f25735;
+    $border-red: 1px solid $red;
+    $border-black: 1px solid black;
+
+    .nav-promote{
+        .bd-highlight{
+            &:nth-child(2){
+                width: 200px;
+            }
+            &:nth-child(3){
+                @include my-auto;
+            }
+        }
+    }
+
+    .login-register, .search-desktop, #navbar-menu-content, .privilege, .profile-wishlist, .product-slider{
+        display: none !important;
+    }
+
+    #navbarDropdownSearch{
+        display: inline;
+    }
+
+    #sidebarCollapse, .product-slider-mobile{
+        display: block !important;
+    }
+
+    #navbarDropdownCartMenu{
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        margin-top: 40px !important;
+    }
+
+    #mobile-nav{
+        height: 100vh; 
+        width: 0; 
+        background-color: white; 
+        position: fixed; 
+        z-index: 9999;
+        display: none; 
+        top: 0; 
+        left: 0;
+    }
+
+    #mobile-nav-overlay{
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 9998; 
+        opacity: 0;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0; 
+        left: 0;
+        display: none;
+        opacity: 0;
+    }
+
+    .top-navbar{
+        background-color: $pink-medium;
+        position: relative;
+    }
+
+    .home-banner-area{
+        padding: 0 !important;
+    }
+
+    .nav-best-phoebe{
+        .nav-link{
+            @include px(10px);
+        }
+    }
+
+    .video-phoebe, .deskripsi-video-phoebe{
+        width: 100% !important;
+    }
+
+    .text-forum{
+        font-size: 0.8125rem !important;
+    }
+
+    .btn-loginregister-mobile{
+        background-color: $red !important;
+        color: white !important;
+        margin-top: 1rem;
+        &:hover, &:active{
+            background-color: $red-dark !important;
+        }
+    }
+
+    .btn-font-mobile{
+        font-size: 14px !important;
+    }
+
+    .list-side-menu{
+        background-color: $pink-soft;
+        border: none !important;
+        border-bottom: $border-red !important;
+        padding: 0.5rem 1rem;
+        font-weight: 700;
+        span{
+            color: $red;
+        }
+        &.diff-menu{
+            color: $red;
+            border: none !important;
+        }
+        &.sc{
+            border-top: $border-red !important;
+        }
+        &.ssc{
+            border: none !important;
+            font-weight: 500;
+            padding-left: 1.5rem;
+        }
+    }
+
+    .btn-add-container{
+        @include py(20px);
+        button{
+            margin-left: 0 !important;
+            @include px(3rem);
+        }
+    }
+
+    .local-pride-1{
+        height: 60px !important;
+    }
+
+    .local-pride-2{
+        height: 92px !important;
+    }
+
+    .local-pride-3{
+        height: 105px !important;
+    }
+
+    .back-side-nav, .title-side-nav, .brand-filter-alphabet, .skincare-filter, .hair-filter, .tools-filter, .skinconcern-filter{
+        display: none;
+    }
+
+    .btn-affiliate{
+        font-size: 16px !important;
+    }
+
+    .col-contact-us{
+        @include px(30px);
+    }
+
+    .col-contact-us-detail{
+        margin-top: 30px !important;
+    }
+
+    .contact-us-img{
+        .col-4{
+            .text-center{
+                img{
+                    height: 30px !important;
+                }
+                .wa{
+                    height: 35px !important;
+                }
+                p{
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+
+    .accordion-contact-us{
+        .card{
+            a{
+                .card-header{
+                    h7{
+                        font-size: 14px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    #accordionEx{
+        .card{
+            a{
+                .card-header{
+                    h7{
+                        font-size: 14px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .card{
+        a{
+            .card-header{
+                h7{
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+
+    .faq-container{
+        h4{
+            font-size: 17px !important;
+        }
+    }
+
+    .title-metode-pembayaran, .title-return, .title-delivery{
+        font-size: 30px !important;
+    }
+
+    .cart-product-price{
+        @include px(15px);
+    }
+
+    .cart-product-total, .content-add-to-bag, .content-added-to-bag{
+        padding-top: 1rem !important;
+    }
+
+    .img-happy{
+        height: 30px !important;
+    }
+
+    .img-keuntungan{
+        height: 50px !important;
+    }
+
+    .img-keuntungan-happy{
+        height: 20px !important;
+    }
+
+    .img-courier{
+        @include px(10px);
+    }
+
+    .btn-address-mobile{
+        @include px(2rem);
+    }
+
+    .kode-transaksi-mobile{
+        @include px(1.5rem);
+    }
+
+    .blog-title-mobile{
+        font-size: 30px !important;
+    }
+
+    .consultation-title{
+        margin-bottom: 0 !important;
+        line-height: 2rem !important;
+    }
+
+    #accordionMobile a[aria-expanded="false"] #headingMobileProfile .col-8 .name-profile-mobile-nav span i {
+        transform: rotate(0);
+    }
+
+    #accordionMobile a[aria-expanded="true"] #headingMobileProfile .col-8 .name-profile-mobile-nav span i {
+        transform: rotate(180deg);
+    }
+
+    .profile-side-menu{
+        border-bottom: $border-black;
+    }
+
+    #account-mobile-menu{
+        @include px(15px);
+        .category-name-mobile-container{
+            a{
+                color: black;
+                display: block;
+                @include px(1.5rem);
+                @include py(0.5rem);
+                &.active{
+                    color: white !important;
+                    background-color: $red;
+                    &:active{
+                        color: white !important;
+                    }
+                }
+                &:active{
+                    color: $red !important;
+                }
+                span{
+                    font-size: 18px;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    #account-mobile-menu{
+        display: block;
+    }
+
+    .otp-form{
+        padding-left: 0 !important;
+    }
+
+    .input-otp{
+        width: 30px !important;
+    }
+}

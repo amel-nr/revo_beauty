@@ -1,0 +1,310 @@
+@media only screen and (max-width: 768px) {
+  .nav-promote .bd-highlight:nth-child(2) {
+    width: 200px;
+  }
+
+  .nav-promote .bd-highlight:nth-child(3) {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
+
+  .login-register,
+  .search-desktop,
+  #navbar-menu-content,
+  .privilege,
+  .profile-wishlist,
+  .product-slider {
+    display: none !important;
+  }
+
+  #navbarDropdownSearch {
+    display: inline;
+  }
+
+  #sidebarCollapse,
+  .product-slider-mobile {
+    display: block !important;
+  }
+
+  #navbarDropdownCartMenu {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    margin-top: 40px !important;
+  }
+
+  #mobile-nav {
+    height: 100vh;
+    width: 0;
+    background-color: white;
+    position: fixed;
+    z-index: 9999;
+    display: none;
+    top: 0;
+    left: 0;
+  }
+
+  #mobile-nav-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9998;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: 0;
+  }
+
+  .top-navbar {
+    background-color: #FEF6E8;
+    position: relative;
+  }
+
+  .home-banner-area {
+    padding: 0 !important;
+  }
+
+  .nav-best-phoebe .nav-link {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .video-phoebe,
+  .deskripsi-video-phoebe {
+    width: 100% !important;
+  }
+
+  .text-forum {
+    font-size: 0.8125rem !important;
+  }
+
+  .btn-loginregister-mobile {
+    background-color: #F3795C !important;
+    color: white !important;
+    margin-top: 1rem;
+  }
+
+  .btn-loginregister-mobile:hover,
+  .btn-loginregister-mobile:active {
+    background-color: #f25735 !important;
+  }
+
+  .btn-font-mobile {
+    font-size: 14px !important;
+  }
+
+  .list-side-menu {
+    background-color: #FCF8F0;
+    border: none !important;
+    border-bottom: 1px solid #F3795C !important;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+  }
+
+  .list-side-menu span {
+    color: #F3795C;
+  }
+
+  .list-side-menu.diff-menu {
+    color: #F3795C;
+    border: none !important;
+  }
+
+  .list-side-menu.sc {
+    border-top: 1px solid #F3795C !important;
+  }
+
+  .list-side-menu.ssc {
+    border: none !important;
+    font-weight: 500;
+    padding-left: 1.5rem;
+  }
+
+  .btn-add-container {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .btn-add-container button {
+    margin-left: 0 !important;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+
+  .local-pride-1 {
+    height: 60px !important;
+  }
+
+  .local-pride-2 {
+    height: 92px !important;
+  }
+
+  .local-pride-3 {
+    height: 105px !important;
+  }
+
+  .back-side-nav,
+  .title-side-nav,
+  .brand-filter-alphabet,
+  .skincare-filter,
+  .hair-filter,
+  .tools-filter,
+  .skinconcern-filter {
+    display: none;
+  }
+
+  .btn-affiliate {
+    font-size: 16px !important;
+  }
+
+  .col-contact-us {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+
+  .col-contact-us-detail {
+    margin-top: 30px !important;
+  }
+
+  .contact-us-img .col-4 .text-center img {
+    height: 30px !important;
+  }
+
+  .contact-us-img .col-4 .text-center .wa {
+    height: 35px !important;
+  }
+
+  .contact-us-img .col-4 .text-center p {
+    font-size: 14px !important;
+  }
+
+  .accordion-contact-us .card a .card-header h7 {
+    font-size: 14px !important;
+  }
+
+  #accordionEx .card a .card-header h7 {
+    font-size: 14px !important;
+  }
+
+  .card a .card-header h7 {
+    font-size: 14px !important;
+  }
+
+  .faq-container h4 {
+    font-size: 17px !important;
+  }
+
+  .title-metode-pembayaran,
+  .title-return,
+  .title-delivery {
+    font-size: 30px !important;
+  }
+
+  .cart-product-price {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .cart-product-total,
+  .content-add-to-bag,
+  .content-added-to-bag {
+    padding-top: 1rem !important;
+  }
+
+  .img-happy {
+    height: 30px !important;
+  }
+
+  .img-keuntungan {
+    height: 50px !important;
+  }
+
+  .img-keuntungan-happy {
+    height: 20px !important;
+  }
+
+  .img-courier {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .btn-address-mobile {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  .kode-transaksi-mobile {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
+  .blog-title-mobile {
+    font-size: 30px !important;
+  }
+
+  .consultation-title {
+    margin-bottom: 0 !important;
+    line-height: 2rem !important;
+  }
+
+  #accordionMobile a[aria-expanded="false"] #headingMobileProfile .col-8 .name-profile-mobile-nav span i {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+
+  #accordionMobile a[aria-expanded="true"] #headingMobileProfile .col-8 .name-profile-mobile-nav span i {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+
+  .profile-side-menu {
+    border-bottom: 1px solid black;
+  }
+
+  #account-mobile-menu {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  #account-mobile-menu .category-name-mobile-container a {
+    color: black;
+    display: block;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+
+  #account-mobile-menu .category-name-mobile-container a.active {
+    color: white !important;
+    background-color: #F3795C;
+  }
+
+  #account-mobile-menu .category-name-mobile-container a.active:active {
+    color: white !important;
+  }
+
+  #account-mobile-menu .category-name-mobile-container a:active {
+    color: #F3795C !important;
+  }
+
+  #account-mobile-menu .category-name-mobile-container a span {
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+  }
+
+  #account-mobile-menu {
+    display: block;
+  }
+
+  .otp-form {
+    padding-left: 0 !important;
+  }
+
+  .input-otp {
+    width: 30px !important;
+  }
+}
+
