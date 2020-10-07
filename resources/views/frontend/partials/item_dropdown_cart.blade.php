@@ -27,7 +27,7 @@ foreach (Session::get('cart') as $key => $value){
     // }
 
     @endphp
-    <div class="row mt-3 py-2" style="border-bottom: 1px solid #F3795C;">
+    <div class="row mt-3 py-2" style="border-bottom: 1px solid #D1D1D1;">
         <div class="col-3">
             <img src="{{ isset($product->thumbnail_img) ? asset($product->thumbnail_img) : asset('frontend/images/placeholder.jpg') }}" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
         </div>
@@ -45,15 +45,15 @@ foreach (Session::get('cart') as $key => $value){
                     <s>{{ home_base_price($product->id) }}</s>
                     @if($flash_product)
                         @if($flash_product->discount_type == 'percent')
-                            <span style="color: #F3795C;"> {{ __($flash_product->discount) }}%</span>
+                            <span style="color: #FFAAA5;"> {{ __($flash_product->discount) }}%</span>
                         @elseif($flash_product->discount_type == 'amount')
-                            <span style="color: #F3795C;"> Potongan Rp {{ __($flash_product->discount) }}</span>
+                            <span style="color: #FFAAA5;"> Potongan Rp {{ __($flash_product->discount) }}</span>
                         @endif
                     @else
                         @if($product->discount_type == 'percent')
-                            <span style="color: #F3795C;"> {{ __($product->discount) }}%</span>
+                            <span style="color: #FFAAA5;"> {{ __($product->discount) }}%</span>
                         @elseif($product->discount_type == 'amount')
-                            <span style="color: #F3795C;"> Potongan Rp {{ __($product->discount) }}</span>
+                            <span style="color: #FFAAA5;"> Potongan Rp {{ __($product->discount) }}</span>
                         @endif
                     @endif
                 </p>
@@ -63,19 +63,19 @@ foreach (Session::get('cart') as $key => $value){
             @if($cartItem['digital'] != 1)
                 <div class="input-group input-group--style-2 pr-4" style="width: 135px;">
                     <span class="input-group-btn">
-                        <button class="btn btn-number" type="button" data-type="minus" data-field="quantity[{{ $key }}]">
+                        <button class="btn btn-number" type="button" data-type="minus" data-field="quantity[{{ $key }}]" style="border: none;">
                             <i class="la la-minus"></i>
                         </button>
                     </span>
-                        <input type="text" name="quantity[{{ $key }}]" class="form-control input-number" placeholder="1" value="{{ $cartItem['quantity'] }}" min="1" max="10" onchange="updateQuantity({{ $key }}, this)">
+                        <input type="text" name="quantity[{{ $key }}]" class="form-control input-number text-center" placeholder="1" value="{{ $cartItem['quantity'] }}" min="1" max="10" onchange="updateQuantity({{ $key }}, this)" style="border: none; border-bottom: 1px solid #D1D1D1; color: #FFAAA5;">
                         <span class="input-group-btn">
-                        <button class="btn btn-number" type="button" data-type="plus" data-field="quantity[{{ $key }}]">
+                        <button class="btn btn-number" type="button" data-type="plus" data-field="quantity[{{ $key }}]" style="border: none;">
                             <i class="la la-plus"></i>
                         </button>
                     </span>
                 </div>
             @endif
-            <a href="#" onclick="removeFromCartView(event, {{ $key }});" type="button"><i class="fa fa-trash-o mt-3" aria-hidden="true" style="font-size: 18px; color: #F3795C;"></i></a>
+            <a href="#" onclick="removeFromCartView(event, {{ $key }});" type="button"><i class="fa fa-trash-o mt-3" aria-hidden="true" style="font-size: 18px; color: #FFAAA5;"></i></a>
         </div>
     </div>
 

@@ -74,9 +74,35 @@
                 <p class="heading-6" style="color: #8675A9; font-weight: 700; font-size: 14px;">Promo Eksklusif & Diskon 10%</p>
                 <div class="form-group">
                   <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="Email" style="background-color: #ffffff; font-size: 12px; width: 70%; display: inline; border-color: #FFAAA5;">
-                  <p style="color: black; font-size: 9px; line-height: 14px; margin-top: 5px;">Daftarkan email aktifmu untuk mendapat informasi promo di Ponny Beaute. <br> Dapatkan juga kode promo eksklusif hanya untuk kamu dan diskon 10% untuk pembelian pertamamu.</p>
+                  
+                  <p style="color: black; font-size: 9px; line-height: 14px; margin-top: 5px;">Daftarkan email aktifmu untuk mendapat informasi promo di Revo Beauty. <br> Dapatkan juga kode promo eksklusif hanya untuk kamu dan diskon 10% untuk pembelian pertamamu.</p>
                 </div>
-                <p class="heading-6" style="color: black; font-weight: 700; margin-top: 30px;">PILIHAN PEMBAYARAN</p>
+                <p class="heading-6" style="color: #8675A9; font-weight: 700; margin-top: 30px; line-height: 30px;">CONNECT WITH US</p>
+                <ul class="pl-0">
+                    <li class="lingkaran" style="border: 2px solid #FFAAA5; border-radius: 100%;">
+                        <a href="https://www.facebook.com"><i class="fa fa-facebook align-center" aria-hidden="true" style="font-size: 25px; vertical-align: middle; margin-left: 11px; margin-top: 7px; color: #FFAAA5;"></i></a>
+                    </li>
+                    <li class="lingkaran m-2" style="border: 2px solid #FFAAA5; border-radius: 100%;">
+                        <a href="https://www.instagram.com"><i class="fa fa-instagram align-center" aria-hidden="true" style="font-size: 28px; vertical-align: middle; margin-left: 7px; margin-top: 4px; color: #FFAAA5;"></i></a>
+                    </li>
+                    <li class="lingkaran" style="border: 2px solid #FFAAA5; border-radius: 100%;">
+                        <a href="https://www.pinterest.com"><i class="fa fa-pinterest align-center" aria-hidden="true" style="font-size: 28px; vertical-align: middle; margin-left: 7px; margin-top: 4px; color: #FFAAA5;"></i></a>
+                    </li>
+                    <li class="lingkaran m-2" style="border: 2px solid #FFAAA5; border-radius: 100%;">
+                        <a href="https://www.twitter.com"><i class="fa fa-twitter align-center" aria-hidden="true" style="font-size: 28px; vertical-align: middle; margin-left: 7px; margin-top: 4px; color: #FFAAA5;"></i></a>
+                    </li>
+                    <li class="lingkaran" style="border: 2px solid #FFAAA5; border-radius: 100%;">
+                        <a href="https://www.youtube.com"><i class="fa fa-youtube-play align-center" aria-hidden="true" style="font-size: 25px; vertical-align: middle; margin-left: 6px; margin-top: 6px; color: #FFAAA5;"></i></a>
+                    </li>
+                </ul>
+                <p class="heading-6" style="color: #8675A9; font-weight: 700; margin-top: 30px;">GET THE APP</p>
+                <img src="{{ asset('frontend/images/playstore.png') }}" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="" style="height: 50px;">
+                <img src="{{ asset('frontend/images/appstore.png') }}" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="" style="height: 42px; padding: 4px 0;">
+            </div>
+        </div>
+        <div class="row pt-0" style="margin-top: 0;">
+            <div class="col-6">
+                <p class="heading-6" style="color: #FFAAA5; font-weight: 700; margin-top: 30px;">PILIHAN PEMBAYARAN</p>
                 <img src="{{ asset('frontend/images/metode-pembayaran/visa-02.png') }}" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="" style="height: 60px;">
                 <img src="{{ asset('frontend/images/metode-pembayaran/mastercard-02.png') }}" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="" style="height: 60px;">
                 <img src="{{ asset('frontend/images/metode-pembayaran/jcb-02.png') }}" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="" style="height: 60px;">
@@ -97,18 +123,12 @@
                 <img src="{{ asset('frontend/images/metode-pembayaran/indomaret-02.png') }}" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="" style="height: 60px;">
                 <img src="{{ asset('frontend/images/metode-pembayaran/permata-02.png') }}" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="" style="height: 60px;">
                 <img src="{{ asset('frontend/images/metode-pembayaran/cimbclicks-02.png') }}" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="" style="height: 60px;">
-                <p class="heading-6" style="color: black; font-weight: 700; margin-top: 30px;">DOWNLOAD APLIKASI KAMI</p>
-                <img src="{{ asset('frontend/images/playstore.png') }}" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="" style="height: 50px;">
-                <img src="{{ asset('frontend/images/appstore.png') }}" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="" style="height: 42px; padding: 4px 0;">
-                <p class="heading-6" style="color: black; font-weight: 700; margin-top: 30px; line-height: 30px;">IKUTI KAMI
-                    <a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true" style="font-size: 30px; vertical-align: middle; margin-left: 15px;"></i></a>
-                    <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true" style="font-size: 30px; vertical-align: middle; margin-left: 15px;"></i></a>
-                    <a href="https://www.pinterest.com"><i class="fa fa-pinterest-p" aria-hidden="true" style="font-size: 30px; vertical-align: middle; margin-left: 15px;"></i></a>
-                    <a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true" style="font-size: 30px; vertical-align: middle; margin-left: 15px;"></i></a>
-                    <a href="https://www.youtube.com"><i class="fa fa-youtube-play" aria-hidden="true" style="font-size: 30px; vertical-align: middle; margin-left: 15px;"></i></a>
-                </p>
+            </div>
+            <div class="col-6">
+                <p>Copyright ©2020 REVO BEAUTY. All rights reserved</p>
             </div>
         </div>
+        <div style="border-bottom: 1px solid #D1D1D1; padding-bottom: 15px;"></div>
     </div>
     <!-- <div class="footer-top">
         <div class="container">

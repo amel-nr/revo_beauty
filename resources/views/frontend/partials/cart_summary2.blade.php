@@ -25,7 +25,7 @@
 
 
 
-<div class="container rounded py-3" style="border: 1px solid #F3795C; overflow: auto;">
+<div class="container rounded py-3" style="border: 1px solid #C3AED6; overflow: auto;">
     @if (Auth::check() && \App\BusinessSetting::where('type', 'coupon_system')->first()->value == 1)
         @if (Session::has('coupon_discount'))
         <form  action="{{ route('checkout.remove_coupon_code') }}" method="POST" enctype="multipart/form-data">
@@ -46,7 +46,7 @@
             <p class="font-weight-bold mb-2" style="font-size: 14px;">KODE PROMO</p>
             <div class="row">
                 <div class="col-8 pr-1">
-                    <input type="text" class="form-control rounded p-2" name="code" id="kode_voucher" aria-describedby="voucherHelpId" placeholder="Kode voucher" style="border-color: #F3795C; background-color: #FCF8F0; vertical-align: middle;">
+                    <input type="text" class="form-control rounded p-2" name="code" id="kode_voucher" aria-describedby="voucherHelpId" placeholder="Kode voucher" style="border-color: #FFAAA5; background-color: #ffffff; vertical-align: middle;">
                 </div>
                 <div class="col-4 pl-1">
                     <button  type="submit" class="btn btn-danger text-center btn-pakai py-2 width-100">PAKAI</button>
@@ -65,11 +65,11 @@
             $total -= Session::get('coupon_discount');
         }
     @endphp
-    <p class="mt-3 mb-1 pb-1" style="font-size: 14px; font-weight: 600; border-bottom: 1px solid #F3795C;">SUB TOTAL<span class="float-right">{{ single_price($subtotal) }}</span></p>
+    <p class="mt-3 mb-1 pb-1" style="font-size: 14px; font-weight: 600; border-bottom: 1px solid #D1D1D1;">SUB TOTAL<span class="float-right">{{ single_price($subtotal) }}</span></p>
     @if (Session::has('coupon_discount'))
-    <p class="mt-3 mb-1 pb-1" style="font-size: 14px; font-weight: 600; border-bottom: 1px solid #F3795C;">PROMO DISKON<span class="float-right">{{ single_price(Session::get('coupon_discount')) }}</span></p>
+    <p class="mt-3 mb-1 pb-1" style="font-size: 14px; font-weight: 600; border-bottom: 1px solid #D1D1D1;">PROMO DISKON<span class="float-right">{{ single_price(Session::get('coupon_discount')) }}</span></p>
     @endif
-    <p class="mb-1 pb-1 font-weight-bold" style="font-size: 14px; border-bottom: 1px solid #F3795C;">TOTAL<span class="float-right">{{ single_price($total) }}</span></p>
+    <p class="mb-1 pb-1 font-weight-bold" style="font-size: 14px; border-bottom: 1px solid #D1D1D1;">TOTAL<span class="float-right">{{ single_price($total) }}</span></p>
     @php
 
     $dapatPoint = 0;
@@ -95,10 +95,10 @@
     
 
     @endphp
-    <p class="mb-1 pb-1" style="font-size: 14px; border-bottom: 1px solid #F3795C;">Poin yang di dapat<span class="float-right">+{{ $dapatPoint }}</span></p>
+    <p class="mb-1 pb-1" style="font-size: 14px; border-bottom: 1px solid #D1D1D1;">Poin yang di dapat<span class="float-right">+{{ $dapatPoint }}</span></p>
     @if(Auth::check())
 
-    <p style="font-size: 10px; color: #F3795C;">Gratis ongkir dengan pembelian minimal {{ single_price(Auth::user()->user_tier->free_shiping_min_order) }}</p>
+    <p style="font-size: 10px; color: #FFAAA5;">Gratis ongkir dengan pembelian minimal {{ single_price(Auth::user()->user_tier->free_shiping_min_order) }}</p>
     @endif
     @if(Auth::check())
         <a href="{{ route('checkout.shipping_info') }}" type="button" class="btn btn-danger text-center btn-pakai py-2 float-right">BELI SEKARANG</a>

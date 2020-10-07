@@ -66,7 +66,7 @@
     @php
         $flash_product = \App\FlashDealProduct::where('product_id', $detailedProduct->id)->first();
     @endphp
-    <section class="product-details-area gry-bg" style="background-color: #FCF8F0;">
+    <section class="product-details-area gry-bg" style="background-color: #ffffff;">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-12 p-4">
@@ -109,23 +109,23 @@
                                 @if(home_price($detailedProduct->id) != home_discounted_price($detailedProduct->id))
                                     <p style="font-size: 18px;">
                                         <s>{{ home_price($detailedProduct->id) }}</s>
-                                        <span class="ml-1" style="font-size: 22px; color: #F3795C;">{{ home_discounted_price($detailedProduct->id) }}</span>
+                                        <span class="ml-1" style="font-size: 22px; color: #FFAAA5;">{{ home_discounted_price($detailedProduct->id) }}</span>
                                         @if($flash_product)
                                             @if($flash_product->discount_type == 'percent')
-                                                <span class="badge badge-primary ml-2 px-2" style="font-size: 65%; background-color: #F3795C;">{{ __($flash_product->discount) }}%</span>
+                                                <span class="badge badge-primary ml-2 px-2" style="font-size: 65%; background-color: #FFAAA5;">{{ __($flash_product->discount) }}%</span>
                                             @elseif($flash_product->discount_type == 'amount')
-                                                <span class="badge badge-primary ml-2 px-2" style="font-size: 65%; background-color: #F3795C;">Potongan Rp {{ __($flash_product->discount) }}</span>
+                                                <span class="badge badge-primary ml-2 px-2" style="font-size: 65%; background-color: #FFAAA5;">Potongan Rp {{ __($flash_product->discount) }}</span>
                                             @endif
                                         @else
                                             @if($detailedProduct->discount_type == 'percent')
-                                                <span class="badge badge-primary ml-2 px-2" style="font-size: 65%; background-color: #F3795C;">{{ __($detailedProduct->discount) }}%</span>
+                                                <span class="badge badge-primary ml-2 px-2" style="font-size: 65%; background-color: #FFAAA5;">{{ __($detailedProduct->discount) }}%</span>
                                             @elseif($detailedProduct->discount_type == 'amount')
-                                                <span class="badge badge-primary ml-2 px-2" style="font-size: 65%; background-color: #F3795C;">Potongan Rp {{ __($detailedProduct->discount) }}</span>
+                                                <span class="badge badge-primary ml-2 px-2" style="font-size: 65%; background-color: #FFAAA5;">Potongan Rp {{ __($detailedProduct->discount) }}</span>
                                             @endif
                                         @endif
                                     </p>
                                 @else
-                                    <p style="font-size: 22px; color: #F3795C;">{{ home_discounted_price($detailedProduct->id) }}</p>
+                                    <p style="font-size: 22px; color: #FFAAA5;">{{ home_discounted_price($detailedProduct->id) }}</p>
                                 @endif
                             <form id="option-choice-form">
                                 @php
@@ -188,13 +188,13 @@
                                             <div class="col-md-3 col-6 pl-0">
                                                 <div class="input-group input-group--style-2 pr-3" style="width: 160px;">
                                                     <span class="input-group-btn">
-                                                        <button class="btn btn-number" type="button" data-type="minus" data-field="quantity" disabled="disabled">
+                                                        <button class="btn btn-number" type="button" data-type="minus" data-field="quantity" disabled="disabled" style="border: none;">
                                                             <i class="la la-minus"></i>
                                                         </button>
                                                     </span>
-                                                    <input type="text" name="quantity" class="form-control input-number text-center" placeholder="1" value="1" min="1" max="10">
+                                                    <input type="text" name="quantity" class="form-control input-number text-center" placeholder="1" value="1" min="1" max="10" style="border: none; border-bottom: 1px solid #D1D1D1;">
                                                     <span class="input-group-btn">
-                                                        <button class="btn btn-number" type="button" data-type="plus" data-field="quantity">
+                                                        <button class="btn btn-number" type="button" data-type="plus" data-field="quantity" style="border: none;">
                                                             <i class="la la-plus"></i>
                                                         </button>
                                                     </span>
@@ -208,7 +208,7 @@
                                                 @else
                                                     <button type="button" class="btn btn-danger text-center btn-mskkeranjang ml-3" disabled>STOCK BARANG HABIS</button>
                                                 @endif
-                                                <div class="d-inline rounded-circle text-center ml-2" style="cursor: pointer; font-size: 120%; background-color: #FAE0D4; color: #F3795C; padding: 3px 7px;">
+                                                <div class="d-inline rounded-circle text-center ml-2" style="cursor: pointer; font-size: 120%; background-color: #FAE0D4; color: #FFAAA5; padding: 3px 7px;">
                                                     <i class="fa fa-heart-o" aria-hidden="true" onclick="addToWishList({{ $detailedProduct->id }})"></i>
                                                 </div>
                                             </div>
@@ -220,7 +220,7 @@
                                             </div>
                                             <div class="col-md-10 col-6 pl-0">
                                                 <div class="product-price">
-                                                    <p id="chosen_price" class="font-weight-bold mb-0" style="font-size: 26px; color: #F3795C;">
+                                                    <p id="chosen_price" class="font-weight-bold mb-0" style="font-size: 26px; color: #FFAAA5;">
 
                                                     </p>
                                                 </div>
@@ -235,7 +235,7 @@
                                                 <div class="col-md-8 col-7">
                                                     <div class="form-group">
                                                         <input type="email"
-                                                            class="form-control rounded" name="email" id="register-email" aria-describedby="helpId" placeholder="Masukkan alamat email" style="padding: 10px; border-color: #F3795C; font-size: 12px;" required>
+                                                            class="form-control rounded" name="email" id="register-email" aria-describedby="helpId" placeholder="Masukkan alamat email" style="padding: 10px; border-color: #FFAAA5; font-size: 12px;" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4 col-5 pl-0">
@@ -257,16 +257,16 @@
                             <a target="_blank" href="https://twitter.com/share?url={{url('/product').'/'.$detailedProduct->slug}}"><i class="fa fa-twitter mr-2" style="font-size: 20px; color: #B8B6B0;" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                    <div class="rounded border mt-4" style="border-color: #F3795C !important;">
-                        <div class="container" style="border-bottom: 10px solid #F3795C;">
+                    <div class="rounded border mt-4" style="border-color: #FFAAA5 !important;">
+                        <div class="container" style="border-bottom: 10px solid #FFAAA5;">
                             <h1 class="font-weight-bold h6 py-2 m-0">KETERANGAN</h1>
                         </div>
-                        <div class="container" style="border-bottom: 5px solid #F3795C;">
+                        <div class="container" style="border-bottom: 5px solid #FFAAA5;">
                             <p class="py-2 m-0 text-justify">{!! __($detailedProduct->description) !!}</p>
                         </div>
-                        <div class="container" style="border-bottom: 5px solid #F3795C;">
+                        <div class="container" style="border-bottom: 5px solid #FFAAA5;">
                             <div class="row">
-                                <div class="col-4" style="border-right: 5px solid #F3795C;">
+                                <div class="col-4" style="border-right: 5px solid #FFAAA5;">
                                     <h1 class="font-weight-bold h6 py-2 m-0">BAHAN AKTIF</h1>
                                 </div>
                                 <div class="col-8">
@@ -274,14 +274,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="container" style="border-bottom: 5px solid #F3795C;">
+                        <div class="container" style="border-bottom: 5px solid #FFAAA5;">
                             <div class="row">
                                 @php
                                 $bahan_aktif = explode(',',$detailedProduct->bahan_aktif);
                                 @endphp
-                                <div class="col-4" style="border-right: 5px solid #F3795C;">
+                                <div class="col-4" style="border-right: 5px solid #FFAAA5;">
                                     @foreach ($bahan_aktif as $key => $value)
-                                        <p class="py-2 m-0" style="border-bottom: 1px solid #F3795C;">{{ $value }}</p>
+                                        <p class="py-2 m-0" style="border-bottom: 1px solid #FFAAA5;">{{ $value }}</p>
                                     @endforeach
                                 </div>
                                 <div class="col-8">
@@ -289,7 +289,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="container" style="border-bottom: 5px solid #F3795C;">
+                        <div class="container" style="border-bottom: 5px solid #FFAAA5;">
                             <h1 class="font-weight-bold h6 py-2 m-0">CARA PENGGUNAAN</h1>
                         </div>
                         <div class="container">
@@ -312,7 +312,7 @@
 
             </div>
             @if(\App\Models\Review::where('product_id',$detailedProduct->id)->count()>4 &&  !isset($type))
-            <div class="container p-4 text-center" style="border-bottom: 1px solid #F3795C;">
+            <div class="container p-4 text-center" style="border-bottom: 1px solid #FFAAA5;">
                 <button type="button" class="btn btn-danger text-center btn-lihatlebihbanyak py-2 px-5 mb-4" onclick="loadmoreReview()" >LIHAT LEBIH BANYAK</button>
             </div>
             @endif

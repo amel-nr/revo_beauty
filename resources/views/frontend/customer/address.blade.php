@@ -18,8 +18,8 @@
 @endsection
 @section('content')
 
-    <section class="gry-bg pb-4 profile" style="background-color: #FCF8F0;">
-        <h1 class="font-weight-bold h3 mb-5 py-5 text-center" style="background-color: #F3795C; color: white;">PHOEBE’S SQUAD</h1>
+    <section class="gry-bg pb-4 profile" style="background-color: #ffffff;">
+        <h1 class="font-weight-bold h3 mb-5 py-5 text-center" style="background-color: #FFAAA5; color: white;">REVO’S SQUAD</h1>
         @include('frontend.inc.account_mobile_menu')
         <div class="container">
             <div class="row cols-xs-space cols-sm-space cols-md-space">
@@ -36,7 +36,7 @@
                        
 
                 <div class="col-lg-9">
-                    <div class="text-center" style="border-bottom: 1px solid #F3795C;">
+                    <div class="text-center" style="border-bottom: 1px solid #FFAAA5;">
                         <h1 class="title-address py-2 mb-0 font-weight-bold heading heading-4">ALAMAT PENGIRIMAN</h1>
                     </div>
                     <div class="row py-5 detail-address">
@@ -74,52 +74,52 @@
                         <div id="map" style="width: 100%;height: 500px;"></div>
                         <div class="col-md-4 col-12">
                             <h1 class="title-account py-2 mb-3 font-weight-bold heading heading-4">INFORMASI PENERIMA</h1>
-                            <p class="m-0" style="font-size: 15px; color: black;">Nama Depan<sup style="color: #F3795C;">*</sup></p>
+                            <p class="m-0" style="font-size: 15px; color: black;">Nama Depan<sup style="color: #FFAAA5;">*</sup></p>
                             <div class="form-group">
                                 <input type="text" class="form-control rounded my-2 p-2" name="nama_depan" id="nama_depan_alamat" aria-describedby="namaDepanHelpId" style="border-color: #F3795C;" required>
                             </div>
-                            <p class="m-0" style="font-size: 15px; color: black;">Nama Belakang<sup style="color: #F3795C;">*</sup></p>
+                            <p class="m-0" style="font-size: 15px; color: black;">Nama Belakang<sup style="color: #FFAAA5;">*</sup></p>
                             <div class="form-group">
                                 <input type="text" class="form-control rounded my-2 p-2" name="nama_belakang" id="nama_belakang_alamat" aria-describedby="namaBelakangHelpId" style="border-color: #F3795C;" required>
                             </div>
-                            <p class="m-0" style="font-size: 15px; color: black;">Nomor Handphone<sup style="color: #F3795C;">*</sup></p>
+                            <p class="m-0" style="font-size: 15px; color: black;">Nomor Handphone<sup style="color: #FFAAA5;">*</sup></p>
                             <div class="input-group" style="margin-bottom: 1rem;">
                                 <div class="input-group-prepend">
-                                    <div class="input-group-text mt-2 p-2" style="background-color: white; border-color: #F3795C; color: #939598;">+62</div>
+                                    <div class="input-group-text mt-2 p-2" style="background-color: white; border-color: #FFAAA5; color: #939598;">+62</div>
                                 </div>
-                                <input type="number" class="form-control mt-2 p-2" name="nomor_hp" id="PhoneFormInputGroup" style="border-color: #F3795C;" required>
+                                <input type="number" class="form-control mt-2 p-2" name="nomor_hp" id="PhoneFormInputGroup" style="border-color: #FFAAA5;" required>
                             </div>
                         </div>
                         <div class="col-md-7 col-12 offset-md-1">
                             <h1 class="title-account py-2 mb-3 font-weight-bold heading heading-4">ALAMAT LENGKAP</h1>
-                            <p class="m-0" style="font-size: 15px; color: black;">Alamat<sup style="color: #F3795C;">*</sup></p>
+                            <p class="m-0" style="font-size: 15px; color: black;">Alamat<sup style="color: #FFAAA5;">*</sup></p>
                             <div class="form-group">
-                                <textarea class="form-control my-2 p-2 rounded" name="alamat_lengkap" id="alamat_lengkap" rows="3" style="border-color: #F3795C;" required></textarea>
+                                <textarea class="form-control my-2 p-2 rounded" name="alamat_lengkap" id="alamat_lengkap" rows="3" style="border-color: #FFAAA5;" required></textarea>
                             </div>
-                            <p class="m-0" style="font-size: 15px; color: black;">Provinsi<sup style="color: #F3795C;">*</sup></p>
+                            <p class="m-0" style="font-size: 15px; color: black;">Provinsi<sup style="color: #FFAAA5;">*</sup></p>
                             <div class="form-group">
-                                <select class="form-control rounded my-2 p-2 select2" name="province_id" id="provinsi" aria-describedby="provinsiHelpId" style="border-color: #F3795C;" required>
+                                <select class="form-control rounded my-2 p-2 select2" name="province_id" id="provinsi" aria-describedby="provinsiHelpId" style="border-color: #FFAAA5;" required>
                                     <option></option>
                                 </select>
                                 <input type="hidden" name="province">
                             </div>
-                            <p class="m-0" style="font-size: 15px; color: black;">Kota/Kabupaten<sup style="color: #F3795C;">*</sup></p>
+                            <p class="m-0" style="font-size: 15px; color: black;">Kota/Kabupaten<sup style="color: #FFAAA5;">*</sup></p>
                             <div class="form-group">
-                                <select class="form-control rounded my-2 p-2 select2" name="city_id" id="kota_kabupaten" aria-describedby="provinsiHelpId" style="border-color: #F3795C;" required>
+                                <select class="form-control rounded my-2 p-2 select2" name="city_id" id="kota_kabupaten" aria-describedby="provinsiHelpId" style="border-color: #FFAAA5;" required>
                                     <option></option>
                                 </select>
                                 <input type="hidden" name="city_name">
                             </div>
-                            <p class="m-0" style="font-size: 15px; color: black;">Kecamatan<sup style="color: #F3795C;">*</sup></p>
+                            <p class="m-0" style="font-size: 15px; color: black;">Kecamatan<sup style="color: #FFAAA5;">*</sup></p>
                             <div class="form-group">
-                                <select class="form-control rounded my-2 p-2 select2" name="kecamatan_id" id="kecamatan" aria-describedby="provinsiHelpId" style="border-color: #F3795C;" required>
+                                <select class="form-control rounded my-2 p-2 select2" name="kecamatan_id" id="kecamatan" aria-describedby="provinsiHelpId" style="border-color: #FFAAA5;" required>
                                     <option></option>
                                 </select>
                                 <input type="hidden" name="kecamatan">
                             </div>
-                            <p class="m-0" style="font-size: 15px; color: black;">Kode Pos<sup style="color: #F3795C;">*</sup></p>
+                            <p class="m-0" style="font-size: 15px; color: black;">Kode Pos<sup style="color: #FFAAA5;">*</sup></p>
                             <div class="form-group">
-                                <input type="text" class="form-control rounded my-2 p-2" name="postal_code" id="kode_pos_alamat" aria-describedby="kodePosHelpId" style="border-color: #F3795C;" required>
+                                <input type="text" class="form-control rounded my-2 p-2" name="postal_code" id="kode_pos_alamat" aria-describedby="kodePosHelpId" style="border-color: #FFAAA5;" required>
                             </div>
                             <div>
                                 <a href="#" type="button" class="btn btn-danger text-center btn-pakai py-2 px-5 mt-3 cancel-save-address" style="font-size: 16px; font-weight: 700;">BATAL</a>

@@ -10,14 +10,14 @@
 
 @section('content')
 
-    <div id="page-content" style="background-color: #FCF8F0;">
+    <div id="page-content" style="background-color: #ffffff;">
 
-        <section class="py-4 gry-bg" style="background-color: #FCF8F0;">
+        <section class="py-4 gry-bg" style="background-color: #ffffff;">
             <div class="container">
                 <h1 class="h5 font-weight-bold">DETAIL PENGIRIMAN</h1>
                 <div class="row" id="body-shiping">
-                    <div class="col-md-8 col-12 py-3" style="border-top: 3px solid #F3795C;">
-                        <h2 class="h6 font-weight-bold pb-2 mb-3" style="border-bottom: 1px solid #F3795C;">1. ALAMAT PENGIRIMAN<span class="float-right"><a href="#" type="button" class="btn btn-danger text-center btn-pakai py-1 px-3 mb-3 my-auto title-edit-alamat">EDIT</a></span></h2>
+                    <div class="col-md-8 col-12 py-3" style="border-top: 3px solid #d1d1d1;">
+                        <h2 class="h6 font-weight-bold pb-2 mb-3" style="border-bottom: 1px solid #FFAAA5;">1. ALAMAT PENGIRIMAN<span class="float-right"><a href="#" type="button" class="btn btn-danger text-center btn-pakai py-1 px-3 mb-3 my-auto title-edit-alamat">EDIT</a></span></h2>
                         
                         @php
 

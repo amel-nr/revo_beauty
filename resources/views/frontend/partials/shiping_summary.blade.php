@@ -39,16 +39,16 @@
 @endphp
 <form action="{{ route('checkout.payment_info') }}" method="POST">
 @csrf
-<p class="mt-3 mb-1 pb-1" style="font-size: 14px; font-weight: 600; border-bottom: 1px solid #F3795C;">SUB TOTAL<span class="float-right">{{ single_price($subtotal) }}</span></p>
+<p class="mt-3 mb-1 pb-1" style="font-size: 14px; font-weight: 600; border-bottom: 1px solid #FFAAA5;">SUB TOTAL<span class="float-right">{{ single_price($subtotal) }}</span></p>
 @if (Session::has('coupon_discount'))
-<p class="mt-3 mb-1 pb-1" style="font-size: 14px; font-weight: 600; border-bottom: 1px solid #F3795C;">PROMO DISKON<span class="float-right">{{ single_price(Session::get('coupon_discount')) }}</span></p>
+<p class="mt-3 mb-1 pb-1" style="font-size: 14px; font-weight: 600; border-bottom: 1px solid #FFAAA5;">PROMO DISKON<span class="float-right">{{ single_price(Session::get('coupon_discount')) }}</span></p>
 @endif
 
 @if (isset($curier))
-<p class="mb-1 pb-1" style="font-size: 14px; font-weight: 600; border-bottom: 1px solid #F3795C;">BIAYA PENGIRIMAN<span class="float-right" id="biaya">{{ single_price($shipping) }}</span></p>
+<p class="mb-1 pb-1" style="font-size: 14px; font-weight: 600; border-bottom: 1px solid #FFAAA5;">BIAYA PENGIRIMAN<span class="float-right" id="biaya">{{ single_price($shipping) }}</span></p>
 @endif
 @if ($potongan > 0)
-<p class="mt-3 mb-1 pb-1" style="font-size: 14px; font-weight: 600; border-bottom: 1px solid #F3795C;">GRATIS ONGKIR<span class="float-right">{{ single_price($potongan) }}</span></p>
+<p class="mt-3 mb-1 pb-1" style="font-size: 14px; font-weight: 600; border-bottom: 1px solid #FFAAA5;">GRATIS ONGKIR<span class="float-right">{{ single_price($potongan) }}</span></p>
 @endif
 @php
 $dapatPoint = 0;

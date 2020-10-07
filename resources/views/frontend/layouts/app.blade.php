@@ -139,7 +139,12 @@
     .btn {
         font-family: brandon, "Open Sans", sans-serif !important;
     }
-
+    .lingkaran {
+        display: inline-block;
+        background-size: 41px 41px;
+        width: 41px;
+        height: 41px;
+    }
     h1, h2, h3, h4, h5, h6, .title-name{
         font-family: yeseva, "Open Sans", sans-serif !important;
     }
@@ -150,7 +155,7 @@
 
     .top-navbar{
         transition: background-color .3s;
-        background-color: #FEF6E8;
+        background-color: #fff;
         position: relative;
         width: 100%;
     }
@@ -159,7 +164,7 @@
         position: fixed !important;
         top: 0;
         width: 100%;
-        background-color: #FEF6E8; 
+        background-color: #fff; 
     }
 
     #mobile-nav{
@@ -253,18 +258,18 @@
     }
 
     .lihatlebihbanyak {
-        border: 1px solid #F3795C;
+        border: 1px solid #FFAAA5;
         border-radius: 5px; 
-        background-color: #FADFD2; 
-        color: #F3795C; 
+        background-color: #F6E5F5; 
+        color: #FFAAA5; 
         padding: 10px 20px; 
         font-weight: 700
     }
 
     .lihatlebihbanyak:hover {
-        background-color: #F3795C;
+        background-color: #FFAAA5;
         color: white;
-        border: 1px solid #F3795C;
+        border: 1px solid #FFAAA5;
     }
 
     .content-blog {
@@ -322,11 +327,11 @@
     }
 
     .btn-loginregister, .btn-pilih, .btn-spinner {
-        border: 1px solid #F3795C;
+        border: 1px solid #FFAAA5;
     }
 
     .btn-loginregister {
-        color: #F3795C !important;
+        color: #FFAAA5 !important;
         font-weight: 700;
         background-color: transparent;
     }
@@ -344,15 +349,15 @@
     }
 
     .btn-loginregister:hover, .btn-pilih:hover, .btn-spinner:hover, .btn-komplain:hover {
-        background-color: #F3795C;
+        background-color: #FFAAA5;
         color: white !important;
-        border: 1px solid #F3795C;
+        border: 1px solid #FFAAA5;
     }
 
     .btn-pilih:focus {
         color: white !important;
-        background-color: #F3795C !important;
-        border-color: #F3795C !important;
+        background-color: #FFAAA5 !important;
+        border-color: #FFAAA5 !important;
     }
 
     .list-group-item {
@@ -364,20 +369,20 @@
     }
 
     .btn-keluar, .btn-mskkeranjang, .btn-lihatlebihbanyak, .btn-pakai {
-        background-color: #F3795C;
-        border-color: #F3795C !important;
+        background-color: #FFAAA5;
+        border-color: #FFAAA5 !important;
         border-radius: 5px;
         color: white !important;
     }
     
     .btn-nantisaja, .btn-komplain {
-        background-color: #FCF8F0;
-        border-color: #F3795C !important;
+        background-color: #ffffff;
+        border-color: #FFAAA5 !important;
         border-radius: 5px;
     }
 
     .btn-nantisaja {
-        color: #F3795C !important;
+        color: #FFAAA5 !important;
     }
 
     .btn-komplain {
@@ -398,14 +403,14 @@
 
     .btn-keluar:hover, .btn-mskkeranjang:hover, .btn-lihatlebihbanyak:hover, .btn-pakai:hover {
         color: white !important;
-        background-color: #f25735 !important;
-        border-color: #f25735 !important;
+        background-color: #FE9993 !important;
+        border-color: #FE9993 !important;
     }
 
     .btn-keluar:focus, .btn-mskkeranjang:focus, .btn-lihatlebihbanyak:focus, .btn-pakai:focus, .btn-komplain:focus {
         color: white !important;
-        background-color: #f25735 !important;
-        border-color: #f25735 !important;
+        background-color: #FE9993 !important;
+        border-color: #FE9993 !important;
     }
     .input-otp {
         width: 50px;
@@ -868,22 +873,22 @@
 
 <div class="modal hide fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
     <div class="modal-dialog" role="document">
-        <div class="modal-content" style="background-color: #FCF8F0;">
-            <div class="modal-header">
+        <div class="modal-content" style="background-color: #ffffff;">
+            <div class="modal-header" style="border-bottom: none;">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">                        <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body" style="width: 90%; margin: 0 auto; padding-bottom: 50px;">
 
                 <fieldset>
-                    <p class="heading-5 mb-1" style="font-weight: 700;">SELAMAT DATANG DI PONNY BEAUTE!</p>
+                    <p class="heading-5 mb-1" style="font-weight: 700;">SELAMAT DATANG DI REVO BEAUTY!</p>
                     <p style="font-weight: 700;">Masukan alamat email kamu untuk masuk atau mendaftar</p>
                     <div class="form-group">
                         <label for=""></label>
-                          <input type="email" class="form-control" name="" id="email_login" aria-describedby="emailHelpId" placeholder="Email" style="padding: 10px; border-color: #F3795C;" required>
+                          <input type="email" class="form-control" name="" id="email_login" aria-describedby="emailHelpId" placeholder="Email" style="padding: 10px; border-color: #FFAAA5;" required>
                     </div>
                     <span class="mb-3" id="alert-email"  style="color: #FCF8F0; display: block;">*Harap email anda.</span>
-                    <button type="button" class="btn btn-primary next action-button btn-font-mobile" data-flex="login" style="display: block; margin: 0 auto; background-color: #F3795C; border: none; padding: 10px 40px; border-radius: 5px; width: 100%; font-size: 18px; margin-bottom: 10px;">LANJUTKAN DENGAN EMAIL</button>
+                    <button type="button" class="btn btn-primary next action-button btn-font-mobile" data-flex="login" style="display: block; margin: 0 auto; background-color: #FFAAA5; border: none; padding: 10px 40px; border-radius: 5px; width: 100%; font-size: 18px; margin-bottom: 10px;">LANJUTKAN DENGAN EMAIL</button>
                     @if(\App\BusinessSetting::where('type', 'google_login')->first()->value == 1 || \App\BusinessSetting::where('type', 'facebook_login')->first()->value == 1 || \App\BusinessSetting::where('type', 'twitter_login')->first()->value == 1)
                                         <div class="or or--1 mt-3 text-center">
                                             <span>or</span>
@@ -909,10 +914,10 @@
                                     <a href="#" class="btn btn-styled btn-block btn-phone btn-icon--2 btn-icon-left px-4 nextnext action-button" style="margin-bottom: 20px;">
                                         <i class="icon fa fa-phone"></i> {{__('Login with Phone Number')}}
                                     </a>
-                    <p style="text-align: center; font-size: 10px; width: 70%; margin: 0 auto; color: #BCBDC0;">Dengan melakukan pendaftaran kamu telah menyetujui <a href="{{ url('kebijakan-privasi') }}" style="color: #1074BC;">Kebijakan Privasi</a> dan <a href="{{ url('syarat-ketentuan') }}" style="color: #1074BC;">Syarat & Ketentuan</a></p>
+                    <p style="text-align: center; font-size: 12px; width: 70%; margin: 0 auto; color: #BCBDC0;">Dengan melakukan pendaftaran kamu telah menyetujui <a href="{{ url('kebijakan-privasi') }}" style="color: #1074BC;">Kebijakan Privasi</a> dan <a href="{{ url('syarat-ketentuan') }}" style="color: #1074BC;">Syarat & Ketentuan</a></p>
                 </fieldset>
                 <fieldset class="fnext">
-                    <p class="heading-5 mb-1" style="font-weight: 700;">SELAMAT DATANG DI PONNY BEAUTE!</p>
+                    <p class="heading-5 mb-1" style="font-weight: 700;">SELAMAT DATANG DI REVO BEAUTY!</p>
                     <p style="font-weight: 700;">Masukan password kamu untuk masuk</p>
                     <label for="" style="color: #8B8986;">Email</label>
                     <p style="font-weight: 700;" id="email_label"><i class="fa fa-check" aria-hidden="true" style="color: #F3795C; float: right; font-size: 18px;"></i></p>
@@ -930,27 +935,27 @@
                     <p style="text-align: center; font-size: 10px; width: 70%; margin: 0 auto; color: #BCBDC0;">Dengan melakukan pendaftaran kamu telah menyetujui <a href="{{ url('kebijakan-privasi') }}" style="color: #1074BC;">Kebijakan Privasi</a> dan <a href="{{ url('syarat-ketentuan') }}" style="color: #1074BC;">Syarat & Ketentuan</a></p>
                 </fieldset>
                 <fieldset class="fnext">
-                    <p class="heading-5 mb-1" style="font-weight: 700;">SELAMAT DATANG DI PONNY BEAUTE!</p>
+                    <p class="heading-5 mb-1" style="font-weight: 700;">SELAMAT DATANG DI REVO BEAUTY!</p>
                     <p style="font-weight: 700;">Masukan nomor telepon kamu untuk masuk</p>
 
                     <div class="input-group ">
                         <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1" style="background-color: white; color: #939598; border-color: #F3795C;">+62</span>
+                            <span class="input-group-text" id="basic-addon1" style="background-color: white; color: #939598; border-color: #FFAAA5;">+62</span>
                         </div>
                         <input type="number"
-                            class="form-control" name="" id="phoneNumber" aria-describedby="helpId" placeholder="Nomor Handphone" style="padding: 10px; border-color: #F3795C;">
+                            class="form-control" name="" id="phoneNumber" aria-describedby="helpId" placeholder="Nomor Handphone" style="padding: 10px; border-color: #FFAAA5;">
 
 
                     </div>
                   
-                     <span class="mb-3" id="alert-insertnomor"  style="color: #FCF8F0; display: block;">*Harap masukan nomor anda.</span>
+                     <span class="mb-3" id="alert-insertnomor"  style="color: #ffffff; display: block;">*Harap masukan nomor anda.</span>
 
-                    <button type="button" class="btn btn-primary action-button" id="sign-in-button" style="display: block; margin: 0 auto; background-color: #F3795C; border: none; padding: 10px 40px; border-radius: 5px; width: 100%; font-size: 18px; margin-bottom: 10px;">MASUK</button>
-                    <p class="prevprev action-button-previous"><i class="fa fa-chevron-left" aria-hidden="true" style="padding-right: 10px; color: #F3795C;"></i>Kembali</p>
+                    <button type="button" class="btn btn-primary action-button" id="sign-in-button" style="display: block; margin: 0 auto; background-color: #FFAAA5; border: none; padding: 10px 40px; border-radius: 5px; width: 100%; font-size: 18px; margin-bottom: 10px;">MASUK</button>
+                    <p class="prevprev action-button-previous"><i class="fa fa-chevron-left" aria-hidden="true" style="padding-right: 10px; color: #FFAAA5;"></i>Kembali</p>
                     <p style="text-align: center; font-size: 10px; width: 70%; margin: 0 auto; color: #BCBDC0;">Dengan melakukan pendaftaran kamu telah menyetujui <a href="{{ url('kebijakan-privasi') }}" style="color: #1074BC;">Kebijakan Privasi</a> dan <a href="{{ url('syarat-ketentuan') }}" style="color: #1074BC;">Syarat & Ketentuan</a></p>
                 </fieldset>
                 <fieldset class="fnext">
-                    <p class="heading-5 mb-1" style="font-weight: 700;">DAFTAR SEBAGAI ANGGOTA PHOEBE'S SQUAD</p>
+                    <p class="heading-5 mb-1" style="font-weight: 700;">DAFTAR SEBAGAI ANGGOTA REVO'S SQUAD</p>
                     <p style="font-weight: 700;">Periksa pesan SMS Anda. Kami telah mengirimkan PIN</p>
                     <p>Nomor Telepon</p>
                     <p class="nomor-terpakai"></p>
@@ -982,7 +987,7 @@
                         <div class="col">
                         </div>
                         <div class="col text-right">
-                            <button type="button" class="btn btn-primary" id="verify-code-button" style="background-color: #F3795C; border-color: #F3795C; border-radius: 5px;" disabled>LANJUT</button>
+                            <button type="button" class="btn btn-primary" id="verify-code-button" style="background-color: #FFAAA5; border-color: #FFAAA5; border-radius: 5px;" disabled>LANJUT</button>
                         </div>
                         <form id="form_lanjutan" action="{{ url('users/registrationOtp') }}" method="GET">
                             <input type="hidden" name="uid">
@@ -993,58 +998,58 @@
                     <p style="text-align: center; font-size: 10px; width: 70%; margin: 0 auto; color: #BCBDC0;">Dengan melakukan pendaftaran kamu telah menyetujui <a href="{{ url('kebijakan-privasi') }}" style="color: #1074BC;">Kebijakan Privasi</a> dan <a href="{{ url('syarat-ketentuan') }}" style="color: #1074BC;">Syarat & Ketentuan</a></p>
                 </fieldset>
                 <fieldset class="fnext">
-                    <p class="heading-5 mb-1" style="font-weight: 700;">DAFTAR SEBAGAI ANGGOTA PHOEBE'S SQUAD</p>
-                    <p style="font-weight: 700;">Nikmati Keuntungan Bergabung Phoebe's Squad:</p>
-                    <p><i class="fa fa-heart" aria-hidden="true" style="margin-right: 5px; color:#F3795C"></i>Dapatkan diskon pembelian pertama dan 50 poin bonus</p>
-                    <p><i class="fa fa-heart" aria-hidden="true" style="margin-right: 5px; color:#F3795C"></i>Akses untuk promo khusus member</p>
-                    <p><i class="fa fa-heart" aria-hidden="true" style="margin-right: 5px; color:#F3795C"></i>Tukar poin dengan hadiah menarik</p>
-                    <p><i class="fa fa-heart" aria-hidden="true" style="margin-right: 5px; color:#F3795C"></i>2x poin di hari ulang tahun</p>
-                    <hr style="border-color: #F3795C;">
+                    <p class="heading-5 mb-1" style="font-weight: 700;">DAFTAR SEBAGAI ANGGOTA REVO'S SQUAD</p>
+                    <p style="font-weight: 700;">Nikmati Keuntungan Bergabung Revo's Squad:</p>
+                    <p><i class="fa fa-heart" aria-hidden="true" style="margin-right: 5px; color:#FFAAA5"></i>Dapatkan diskon pembelian pertama dan 50 poin bonus</p>
+                    <p><i class="fa fa-heart" aria-hidden="true" style="margin-right: 5px; color:#FFAAA5"></i>Akses untuk promo khusus member</p>
+                    <p><i class="fa fa-heart" aria-hidden="true" style="margin-right: 5px; color:#FFAAA5"></i>Tukar poin dengan hadiah menarik</p>
+                    <p><i class="fa fa-heart" aria-hidden="true" style="margin-right: 5px; color:#FFAAA5"></i>2x poin di hari ulang tahun</p>
+                    <hr style="border-color: #FFAAA5;">
                     <label for="" style="color: #8B8986;">Email</label>
-                    <p style="font-weight: 700;" id="email_register"><i class="fa fa-check" aria-hidden="true" style="color: #F3795C; float: right; font-size: 18px;"></i></p>
-                    <button type="button" class="btn btn-primary next action-button" style="display: block; margin: 0 auto; background-color: #F3795C; border: none; padding: 10px 40px; border-radius: 5px; width: 100%; font-size: 18px; margin-bottom: 10px;">DAFTAR DENGAN EMAIL</button>
+                    <p style="font-weight: 700;" id="email_register"><i class="fa fa-check" aria-hidden="true" style="color: #FFAAA5; float: right; font-size: 18px;"></i></p>
+                    <button type="button" class="btn btn-primary next action-button" style="display: block; margin: 0 auto; background-color: #FFAAA5; border: none; padding: 10px 40px; border-radius: 5px; width: 100%; font-size: 18px; margin-bottom: 10px;">DAFTAR DENGAN EMAIL</button>
                     <p style="text-align: center; font-size: 10px; width: 70%; margin: 0 auto; color: #BCBDC0;">Dengan melakukan pendaftaran kamu telah menyetujui <a href="{{ url('kebijakan-privasi') }}" style="color: #1074BC;">Kebijakan Privasi</a> dan <a href="{{ url('syarat-ketentuan') }}" style="color: #1074BC;">Syarat & Ketentuan</a></p>
                 </fieldset>
                 <fieldset class="fnext" id="register_step">
-                    <p class="heading-5 mb-1" style="font-weight: 700;">PHOEBE'S SQUAD</p>
-                    <p style="margin-bottom: 0;">Gabung bersama Phoebe's Squad untuk kumpulkan poin, hadiah, dan keuntungan dari Happy Skin Reward!</p>
+                    <p class="heading-5 mb-1" style="font-weight: 700;">REVO'S SQUAD</p>
+                    <p style="margin-bottom: 0;">Gabung bersama Revo's Squad untuk kumpulkan poin, hadiah, dan keuntungan dari Happy Skin Reward!</p>
                     <form class="form-default" role="form" action="{{ route('register') }}" method="POST">
                     @csrf
                     <div class="row" style="margin-top: 20px;">
                         <div class="col">
                             <div class="form-group">
                                 <input type="text"
-                                    class="form-control" name="name" id="" aria-describedby="helpId" placeholder="Nama Depan" style="padding: 10px; border-color: #F3795C;" required>
+                                    class="form-control" name="name" id="" aria-describedby="helpId" placeholder="Nama Depan" style="padding: 10px; border-color: #FFAAA5;" required>
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-group">
                                 <input type="text"
-                                    class="form-control" name="last_name" id="" aria-describedby="helpId" placeholder="Nama Belakang" style="padding: 10px; border-color: #F3795C;">
+                                    class="form-control" name="last_name" id="" aria-describedby="helpId" placeholder="Nama Belakang" style="padding: 10px; border-color: #FFAAA5;">
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <input type="email"
-                            class="form-control" name="email" id="register-email" aria-describedby="helpId" placeholder="Email" style="padding: 10px; border-color: #F3795C;" required>
+                            class="form-control" name="email" id="register-email" aria-describedby="helpId" placeholder="Email" style="padding: 10px; border-color: #FFAAA5;" required>
                     </div>
                     <div class="form-group">
                         <input type="password"
-                            class="form-control" name="password" id="" aria-describedby="helpId" placeholder="Password" style="padding: 10px; border-color: #F3795C;" required>
+                            class="form-control" name="password" id="" aria-describedby="helpId" placeholder="Password" style="padding: 10px; border-color: #FFAAA5;" required>
                     </div>
                     <div class="form-group">
                         <input type="password"
-                            class="form-control" name="password_confirmation" id="" aria-describedby="helpId" placeholder="Ulangi Password" style="padding: 10px; border-color: #F3795C;" required>
+                            class="form-control" name="password_confirmation" id="" aria-describedby="helpId" placeholder="Ulangi Password" style="padding: 10px; border-color: #FFAAA5;" required>
                     </div>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend" >
-                            <span class="input-group-text" id="basic-addon1" style="background-color: white; color: #939598; border-color: #F3795C;">+62</span>
+                            <span class="input-group-text" id="basic-addon1" style="background-color: white; color: #939598; border-color: #FFAAA5;">+62</span>
                         </div>
                         <input type="number"
-                            class="form-control" name="phone" id="" aria-describedby="helpId" placeholder="Nomor Handphone" style="padding: 10px; border-color: #F3795C;">
+                            class="form-control" name="phone" id="" aria-describedby="helpId" placeholder="Nomor Handphone" style="padding: 10px; border-color: #FFAAA5;">
                     </div>
                     <p style="font-weight: 700; font-size: 14px;"><i class="fa fa-birthday-cake" style="margin-right: 5px;"></i>Isi tanggal lahir kamu dan dapatkan bonus menarik setiap tahun</p>
-                    <input class="" id="datepicker" width="276" name="tgl_lahir" placeholder="Tanggal Lahir" style="border-color: #F3795C;background:#fff;" readonly="readonly" required/>
+                    <input class="" id="datepicker" width="276" name="tgl_lahir" placeholder="Tanggal Lahir" style="border-color: #FFAAA5;background:#fff;" readonly="readonly" required/>
                     <p style="font-weight: 700; font-size: 12px; margin-top: 15px; margin-bottom: 0;">Gender</p>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="P" required>
@@ -1081,7 +1086,7 @@
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary" style="display: block; margin: 0 auto; background-color: #F3795C; border: none; padding: 10px 40px; border-radius: 5px; width: 100%; font-size: 18px; margin-bottom: 10px; margin-top: 20px;">DAFTAR</button>
+                    <button type="submit" class="btn btn-primary" style="display: block; margin: 0 auto; background-color: #FFAAA5; border: none; padding: 10px 40px; border-radius: 5px; width: 100%; font-size: 18px; margin-bottom: 10px; margin-top: 20px;">DAFTAR</button>
                     </form>
                     <p style="text-align: center; font-size: 10px; width: 70%; margin: 0 auto; color: #BCBDC0;">Dengan melakukan pendaftaran kamu telah menyetujui <a href="{{ url('kebijakan-privasi') }}" style="color: #1074BC;">Kebijakan Privasi</a> dan <a href="{{ url('syarat-ketentuan') }}" style="color: #1074BC;">Syarat & Ketentuan</a></p>
                 </fieldset>
@@ -1093,8 +1098,8 @@
 
 <div class="modal hide fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
     <div class="modal-dialog" role="document">
-        <div class="modal-content" style="background-color: #FCF8F0;">
-            <div class="modal-header" style="border-bottom: solid 1px #F3795C;">
+        <div class="modal-content" style="background-color: #ffffff;">
+            <div class="modal-header" style="border-bottom: none;">
                 <p style="font-weight: 700;">Buat Akun</p>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">                        <span aria-hidden="true">&times;</span>
                 </button>
@@ -1102,7 +1107,7 @@
             <div class="modal-body" style="width: 90%; margin: 0 auto; padding-bottom: 50px;">
                 
                 <fieldset>
-                    <p class="heading-5 mb-1" style="font-weight: 700;">PHOEBE'S SQUAD</p>
+                    <p class="heading-5 mb-1" style="font-weight: 700;">REVO'S SQUAD</p>
                     <p style="margin-bottom: 0;">Gabung bersama Phoebe's Squad untuk kumpulkan poin, hadiah, dan keuntungan dari Happy Skin Reward!</p>
                     <form class="form-default" id="register1" role="form" action="{{ route('register') }}" method="POST">
                     @csrf
@@ -1110,23 +1115,23 @@
                         <div class="col">
                             <div class="form-group">
                                 <input type="text"
-                                    class="form-control" name="name" id="" aria-describedby="helpId" placeholder="Nama Depan" style="padding: 10px; border-color: #F3795C;" required>
+                                    class="form-control" name="name" id="" aria-describedby="helpId" placeholder="Nama Depan" style="padding: 10px; border-color: #FFAAA5;" required>
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-group">
                                 <input type="text"
-                                    class="form-control" name="last_name" id="" aria-describedby="helpId" placeholder="Nama Belakang" style="padding: 10px; border-color: #F3795C;">
+                                    class="form-control" name="last_name" id="" aria-describedby="helpId" placeholder="Nama Belakang" style="padding: 10px; border-color: #FFAAA5;">
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <input type="email"
-                            class="form-control" name="email" id="register-email" aria-describedby="helpId" placeholder="Email" style="padding: 10px; border-color: #F3795C;" required>
+                            class="form-control" name="email" id="register-email" aria-describedby="helpId" placeholder="Email" style="padding: 10px; border-color: #FFAAA5;" required>
                     </div>
                     <div class="form-group">
                         <input type="password"
-                            class="form-control" name="password" id="register1-password" aria-describedby="helpId" placeholder="Password" style="padding: 10px; border-color: #F3795C;" required>
+                            class="form-control" name="password" id="register1-password" aria-describedby="helpId" placeholder="Password" style="padding: 10px; border-color: #FFAAA5;" required>
                         
                     </div>
                     <span class="invalid-feedback" role="alert">
@@ -1134,17 +1139,17 @@
                         </span>
                     <div class="form-group">
                         <input type="password"
-                            class="form-control" name="password_confirmation" id="register1-confrim-password" aria-describedby="helpId" placeholder="Ulangi Password" style="padding: 10px; border-color: #F3795C;" required>
+                            class="form-control" name="password_confirmation" id="register1-confrim-password" aria-describedby="helpId" placeholder="Ulangi Password" style="padding: 10px; border-color: #FFAAA5;" required>
                     </div>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend" >
-                            <span class="input-group-text" id="basic-addon1" style="background-color: white; color: #939598; border-color: #F3795C;">+62</span>
+                            <span class="input-group-text" id="basic-addon1" style="background-color: white; color: #939598; border-color: #FFAAA5;">+62</span>
                         </div>
                         <input type="number"
-                            class="form-control" name="phone" id="" aria-describedby="helpId" placeholder="Nomor Handphone" style="padding: 10px; border-color: #F3795C;">
+                            class="form-control" name="phone" id="" aria-describedby="helpId" placeholder="Nomor Handphone" style="padding: 10px; border-color: #FFAAA5;">
                     </div>
-                    <p style="font-weight: 700; font-size: 14px;"><i class="fa fa-birthday-cake" style="margin-right: 5px;"></i>Isi tanggal lahir kamu dan dapatkan bonus menarik setiap tahun</p>
-                    <input id="datepicker2" width="276" name="tgl_lahir" placeholder="Tanggal Lahir" style="border-color: #F3795C;background:#fff;" readonly="readonly" required/>
+                    <p style="font-weight: 700; font-size: 14px;"><i class="fa fa-birthday-cake" style="margin-right: 5px; color: #FFAAA5;"></i>Isi tanggal lahir kamu dan dapatkan bonus menarik setiap tahun</p>
+                    <input id="datepicker2" width="276" name="tgl_lahir" placeholder="Tanggal Lahir" style="border-color: #FFAAA5;background:#fff;" readonly="readonly" required/>
                     <p style="font-weight: 700; font-size: 12px; margin-top: 15px; margin-bottom: 0;">Gender</p>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="P" required>
@@ -1181,7 +1186,7 @@
                             </div>
                         </div>
                     </div>
-                    <button type="submit"  class="btn btn-primary" style="display: block; margin: 0 auto; background-color: #F3795C; border: none; padding: 10px 40px; border-radius: 5px; width: 100%; font-size: 18px; margin-bottom: 10px; margin-top: 20px;">DAFTAR</button>
+                    <button type="submit"  class="btn btn-primary" style="display: block; margin: 0 auto; background-color: #FFAAA5; border: none; padding: 10px 40px; border-radius: 5px; width: 100%; font-size: 18px; margin-bottom: 10px; margin-top: 20px;">DAFTAR</button>
                     </form>
                     @if(\App\BusinessSetting::where('type', 'google_login')->first()->value == 1 || \App\BusinessSetting::where('type', 'facebook_login')->first()->value == 1 || \App\BusinessSetting::where('type', 'twitter_login')->first()->value == 1)
                                         <div class="or or--1 mt-3 text-center">
@@ -1211,27 +1216,27 @@
                     <p style="text-align: center; font-size: 10px; width: 70%; margin: 0 auto; color: #BCBDC0;">Dengan melakukan pendaftaran kamu telah menyetujui <a href="{{ url('kebijakan-privasi') }}" style="color: #1074BC;">Kebijakan Privasi</a> dan <a href="{{ url('syarat-ketentuan') }}" style="color: #1074BC;">Syarat & Ketentuan</a></p>
                 </fieldset>
                 <fieldset class="fnext">
-                    <p class="heading-5 mb-1" style="font-weight: 700;">SELAMAT DATANG DI PONNY BEAUTE!</p>
+                    <p class="heading-5 mb-1" style="font-weight: 700;">SELAMAT DATANG DI REVO BEAUTY!</p>
                     <p style="font-weight: 700;">Masukan nomor telepon kamu untuk masuk</p>
 
                     <div class="input-group ">
                         <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1" style="background-color: white; color: #939598; border-color: #F3795C;">+62</span>
+                            <span class="input-group-text" id="basic-addon1" style="background-color: white; color: #939598; border-color: #FFAAA5;">+62</span>
                         </div>
                         <input type="number"
-                            class="form-control" name="" id="phoneNumber2" aria-describedby="helpId" placeholder="Nomor Handphone" style="padding: 10px; border-color: #F3795C;">
+                            class="form-control" name="" id="phoneNumber2" aria-describedby="helpId" placeholder="Nomor Handphone" style="padding: 10px; border-color: #FFAAA5;">
 
 
                     </div>
                   
                      <span class="mb-3" id="alert-insertnomor2"  style="color: #FCF8F0; display: block;">*Harap masukan nomor anda.</span>
 
-                    <button type="button" class="btn btn-primary action-button" id="sign-in-button2" style="display: block; margin: 0 auto; background-color: #F3795C; border: none; padding: 10px 40px; border-radius: 5px; width: 100%; font-size: 18px; margin-bottom: 10px;">DAFTAR</button>
-                    <p class="prevprev action-button-previous"><i class="fa fa-chevron-left" aria-hidden="true" style="padding-right: 10px; color: #F3795C;"></i>Kembali</p>
+                    <button type="button" class="btn btn-primary action-button" id="sign-in-button2" style="display: block; margin: 0 auto; background-color: #FFAAA5; border: none; padding: 10px 40px; border-radius: 5px; width: 100%; font-size: 18px; margin-bottom: 10px;">DAFTAR</button>
+                    <p class="prevprev action-button-previous"><i class="fa fa-chevron-left" aria-hidden="true" style="padding-right: 10px; color: #FFAAA5;"></i>Kembali</p>
                     <p style="text-align: center; font-size: 10px; width: 70%; margin: 0 auto; color: #BCBDC0;">Dengan melakukan pendaftaran kamu telah menyetujui <a href="{{ url('kebijakan-privasi') }}" style="color: #1074BC;">Kebijakan Privasi</a> dan <a href="{{ url('syarat-ketentuan') }}" style="color: #1074BC;">Syarat & Ketentuan</a></p>
                 </fieldset>
                 <fieldset class="fnext">
-                    <p class="heading-5 mb-1" style="font-weight: 700;">DAFTAR SEBAGAI ANGGOTA PHOEBE'S SQUAD</p>
+                    <p class="heading-5 mb-1" style="font-weight: 700;">DAFTAR SEBAGAI ANGGOTA REVO'S SQUAD</p>
                     <p style="font-weight: 700;">Periksa pesan SMS Anda. Kami telah mengirimkan PIN</p>
                     <p>Nomor Telepon</p>
                     <p class="nomor-terpakai"></p>
@@ -1263,7 +1268,7 @@
                         <div class="col">
                         </div>
                         <div class="col text-right">
-                            <button type="button" class="btn btn-primary" id="verify-code-button2" style="background-color: #F3795C; border-color: #F3795C; border-radius: 5px;" disabled>LANJUT</button>
+                            <button type="button" class="btn btn-primary" id="verify-code-button2" style="background-color: #FFAAA5; border-color: #FFAAA5; border-radius: 5px;" disabled>LANJUT</button>
                         </div>
                         <form id="form_lanjutan" action="{{ url('users/registrationOtp') }}" method="GET">
                             <input type="hidden" name="uid">
@@ -1472,15 +1477,14 @@
 
 <div class="modal hide fade" id="modalSuccessAddToBag" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
     <div class="modal-dialog" role="document">
-        <div class="modal-content" style="background-color: #FCF8F0;">
-            <div class="modal-header" style="border-bottom: solid 1px #F3795C;">
+        <div class="modal-content" style="background-color: #ffffff;">
+            <div class="modal-header" style="border-bottom: solid 1px #FFAAA5;">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">                        <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body px-5 py-4">
                 <div class="text-center mb-4">
-                    <img src="{{asset('img/cart.png')}}" class="mb-2 img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="" style="width: 34px;">
-                    <h1 class="font-weight-bold h6" style="color: #F3795C;">DITAMBAHKAN KE KERANJANG</h1>
+                    <h1 class="font-weight-bold h6" style="color: #FFAAA5;">DITAMBAHKAN KE KERANJANG</h1>
                 </div>
                 <div class="row px-4">
                     <div class="col-5">
@@ -1648,7 +1652,7 @@
     <!-- Header -->
     @include('frontend.inc.nav')
 
-    <div id="distance" style="background-color: #FCF8F0;"></div>
+    <div id="distance" style="background-color: #ffffff;"></div>
 
     @yield('content')
 
@@ -1667,11 +1671,11 @@
 
     <div class="modal fade" id="addToCart">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-zoom product-modal" id="modal-size" role="document">
-            <div class="modal-content position-relative" style="background-color: #FCF8F0;">
+            <div class="modal-content position-relative" style="background-color: #ffffff;">
                 <div class="c-preloader">
                     <i class="fa fa-spin fa-spinner"></i>
                 </div>
-                <div class="modal-header" style="border-bottom: solid 1px #F3795C;">
+                <div class="modal-header" style="border-bottom: solid 1px #FFAAA5;">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">                        <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -1684,11 +1688,11 @@
 
     <div class="modal fade" id="addToBag">
         <div class="modal-dialog modal-dialog-centered modal-dialog-zoom product-modal" role="document">
-            <div class="modal-content position-relative" style="background-color: #FCF8F0;">
+            <div class="modal-content position-relative" style="background-color: #ffffff;">
                 <div class="c-preloader">
                     <i class="fa fa-spin fa-spinner"></i>
                 </div>
-                <div class="modal-header" style="border-bottom: solid 1px #F3795C;">
+                <div class="modal-header" style="border-bottom: solid 1px #FFAAA5;">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">                        <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -2068,20 +2072,20 @@ $(document).ready(function(){
         if($('.sample-container').css('display') == 'none')
         {
             $(".sample-container").show(300);
-            $(".sample-area").css({"background-color": "#F3795C", "color": "white"});
+            $(".sample-area").css({"background-color": "##FFAAA5", "color": "white"});
             $(".sample-arrow").css({"transform": "rotate(180deg)", "color": "white"});
         }
         else {
             $(".sample-container").hide(300);
-            $(".sample-area").css({"background-color": "#FCF8F0", "color": "black"});
-            $(".sample-arrow").css({"transform": "rotate(0deg)", "color": "#F3795C"});
+            $(".sample-area").css({"background-color": "#ffffff", "color": "black"});
+            $(".sample-arrow").css({"transform": "rotate(0deg)", "color": "##FFAAA5"});
         }
 
         if($('.tukarpoin-container').css('display') == 'block'){
             $(".tukarpoin-container").hide(300);
-            $(".tukarpoin-area").css({"background-color": "#FCF8F0", "color": "black"});
+            $(".tukarpoin-area").css({"background-color": "#ffffff", "color": "black"});
             $(".tukarpoin-link").css({"color": "black"});
-            $(".tukarpoin-arrow").css({"transform": "rotate(0deg)", "color": "#F3795C"});
+            $(".tukarpoin-arrow").css({"transform": "rotate(0deg)", "color": "##FFAAA5"});
         }
     });
 
@@ -2089,20 +2093,20 @@ $(document).ready(function(){
         if($('.tukarpoin-container').css('display') == 'none')
         {
             $(".tukarpoin-container").show(300);
-            $(".tukarpoin-area").css({"background-color": "#F3795C", "color": "white"});
+            $(".tukarpoin-area").css({"background-color": "##FFAAA5", "color": "white"});
             $(".tukarpoin-link").css({"color": "white"});
             $(".tukarpoin-arrow").css({"transform": "rotate(180deg)", "color": "white"});
         }
         else {
             $(".tukarpoin-container").hide(300);
-            $(".tukarpoin-area").css({"background-color": "#FCF8F0", "color": "black"});
+            $(".tukarpoin-area").css({"background-color": "#ffffff", "color": "black"});
             $(".tukarpoin-link").css({"color": "black"});
-            $(".tukarpoin-arrow").css({"transform": "rotate(0deg)", "color": "#F3795C"});
+            $(".tukarpoin-arrow").css({"transform": "rotate(0deg)", "color": "##FFAAA5"});
         }
         if($('.sample-container').css('display') == 'block'){
             $(".sample-container").hide(300);
-            $(".sample-area").css({"background-color": "#FCF8F0", "color": "black"});
-            $(".sample-arrow").css({"transform": "rotate(0deg)", "color": "#F3795C"});
+            $(".sample-area").css({"background-color": "#ffffff", "color": "black"});
+            $(".sample-arrow").css({"transform": "rotate(0deg)", "color": "##FFAAA5"});
         }
     });
 
