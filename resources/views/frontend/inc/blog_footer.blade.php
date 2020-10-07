@@ -37,9 +37,9 @@
                                     <div class="col-3 text-right">
                                         <img src="{{ asset('frontend/images/blog/icon-profil.png') }}" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|} text-right" alt="" style="height: 40px;">
                                     </div>
-                                    <div class="col-9 text-left pr-5 pl-0" style="font-size: 14px; font-weight: 600;">
+                                    {{--<div class="col-9 text-left pr-5 pl-0" style="font-size: 14px; font-weight: 600;">
                                         <p class="">{{$b['user']['name']}} <br> {{date('d F Y', strtotime($b['created_at'])) }}</p>
-                                    </div>
+                                    </div>--}}
                                 </div>
                             </div>
                         </div>
@@ -55,7 +55,7 @@
         </div>
     </div>
         <div class="text-center py-5">
-            <a name="" id="otherbtn" class="btn btn-danger btn-spinner rounded" style="font-size: 16px;" href="#" role="button">TAMPILKAN SEMUA</a>
+            <a name="" id="otherbtn" class="btn btn-spinner" style="font-size: 16px; border-radius: 50px;" href="#" role="button">TAMPILKAN SEMUA</a>
         </div>
 </div>
 </section>

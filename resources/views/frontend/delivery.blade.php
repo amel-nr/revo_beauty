@@ -36,8 +36,8 @@
 @section('content')
 <section style="background-color: #fcf8F0;">
     <div class="container py-4">
-        <div class="text-center py-5" style="background-color: #FACAC3;">
-            <h1 class="mb-0 py-5 font-weight-bold title-delivery">PENGIRIMAN</h1>
+        <div style="background: #FACAC3 url({{ asset('frontend/images/atribut.png') }}) no-repeat center center; background-size: cover; padding: 100px 0;">
+            <h1 class="text-center mb-0 py-5 font-weight-bold title-delivery">PENGIRIMAN</h1>
         </div>
         <p class="pt-5 heading-3" style="font-weight: 700;">GRATIS ONGKOS KIRIM JABODETABEK </p>
         <p>Dengan minimum pembelanjaan Rp 250.000,- <br>
