@@ -16,17 +16,28 @@
 @section('content')
 <section style="background-color: #fcf8F0;">
     <div class="container py-4">
-        <div class="text-center py-5" style="background-color: #FACAC3;">
-            <h1 class="mb-0 py-5 font-weight-bold title-metode-pembayaran">METODE PEMBAYARAN</h1>
-        </div>
+        {{-- <div class="text-center py-5" style="background-color: #FACAC3;"> --}}
+            <h1 class="text-center mb-0 py-5 font-weight-bold title-metode-pembayaran">METODE PEMBAYARAN</h1>
+        {{-- </div> --}}
         <div class="row">
             <div class="col-md-3 col-12 pt-5">
-                <a href="#" class="button-metode-pembayaran atm-transfer-button" style="color: #f3795c;"> <p style="font-weight: 700; border-bottom: 1px solid #f3795c;" class="py-4 px-2 mb-0 heading-4">ATM/BANK TRANSFER</p></a>
-                <a href="#" class="button-metode-pembayaran credit-card-button" style="color: black;"> <p style="font-weight: 700; border-bottom: 1px solid #f3795c;" class="py-4 px-2 mb-0 heading-4">CREDIT CARD</p></a>
-                <a href="#" class="button-metode-pembayaran ovo-button" style="color: black;"> <p style="font-weight: 700; border-bottom: 1px solid #f3795c;" class="py-4 px-2 mb-0 heading-4">OVO</p></a>
-                <a href="#" class="button-metode-pembayaran gopay-button" style="color: black;"> <p style="font-weight: 700; border-bottom: 1px solid #f3795c;" class="py-4 px-2 mb-0 heading-4">GOPAY</p></a>
-                <a href="#" class="button-metode-pembayaran bca-virtual-button" style="color: black;"> <p style="font-weight: 700; border-bottom: 1px solid #f3795c;" class="py-4 px-2 mb-0 heading-4">BCA VIRTUAL ACCOUNT</p></a>
-                <a href="#" class="button-metode-pembayaran qr-payment-button" style="color: black;"> <p style="font-weight: 700; border-bottom: 1px solid #f3795c;" class="py-4 px-2 mb-0 heading-4">QR PAYMENT</p></a>
+                <a href="#" class="button-metode-pembayaran atm-transfer-button" style="color: #f3795c;">
+                    <table><tr><td class="w-100"><p style="font-weight: 700 ;" class="py-4 px-2 mb-0 heading-4"> ATM/BANK TRANSFER </p></td><td><i style="font-weight: 700"; class="fa fa-chevron-right py-4 px-2 mb-0 heading-4"></i></td></tr></table> </a>
+                <a href="#" class="button-metode-pembayaran credit-card-button" style="color: black;">
+                    <table><tr><td class="w-100"><p style="font-weight: 700 ;" class="py-4 px-2 mb-0 heading-4"> CREDIT CARD</p></td><td><i style="font-weight: 700"; class="fa fa-chevron-right py-4 px-2 mb-0 heading-4"></i></td></tr></table> </a>
+                    
+                <a href="#" class="button-metode-pembayaran ovo-button" style="color: black;"> 
+                    <table><tr><td class="w-100"><p style="font-weight: 700 ;" class="py-4 px-2 mb-0 heading-4"> OVO</p></td><td><i style="font-weight: 700"; class="fa fa-chevron-right py-4 px-2 mb-0 heading-4"></i></td></tr></table> </a>
+                   
+                <a href="#" class="button-metode-pembayaran gopay-button" style="color: black;"> 
+                    <table><tr><td class="w-100"><p style="font-weight: 700 ;" class="py-4 px-2 mb-0 heading-4"> GOPAY</p></td><td><i style="font-weight: 700"; class="fa fa-chevron-right py-4 px-2 mb-0 heading-4"></i></td></tr></table> </a>
+
+                <a href="#" class="button-metode-pembayaran bca-virtual-button" style="color: black;">
+                    <table><tr><td class="w-100"><p style="font-weight: 700 ;" class="py-4 px-2 mb-0 heading-4"> BCA VIRTUAL ACCOUNT</p></td><td><i style="font-weight: 700"; class="fa fa-chevron-right py-4 px-2 mb-0 heading-4"></i></td></tr></table> </a>
+
+                <a href="#" class="button-metode-pembayaran qr-payment-button" style="color: black;"> 
+                    <table><tr><td class="w-100"><p style="font-weight: 700 ;" class="py-4 px-2 mb-0 heading-4 "> QR PAYMENT</p></td><td><i style="font-weight: 700"; class="fa fa-chevron-right py-4 px-2 mb-0 heading-4"></i></td></tr></table> </a>
+
             </div>
             <div class="col-md-9 col-12 pt-5 pl-4">
                 <div class="metode-container atm-transfer">

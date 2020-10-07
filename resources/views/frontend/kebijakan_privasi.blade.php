@@ -18,6 +18,9 @@
 @section('content')
 <section style="background-color: #fcf8F0;">
     <div class="container pt-4 pb-5" style="font-weight: 600;">
+        <div style="background: #FACAC3 url({{ asset('frontend/images/atribut.png') }}) no-repeat center center; background-size: cover; padding: 100px 0;">
+            {{-- <p class="mb-0 font-weight-bold text-center" style="font-size: 64px; color: white; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;">OH HAPPY SKIN.</p> --}}
+        </div>
         <div class="text-center py-5">
             <h1 class="mb-0 font-weight-bold">KEBIJAKAN PRIVASI</h1>
         </div>

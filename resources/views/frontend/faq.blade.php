@@ -30,9 +30,9 @@
     <div class="container py-4" style="position: relative;">
         @php($banner = \App\Banner::where("url","#faq")->first())
         <img src="{{ isset($banner->photo) ? asset($banner->photo) : asset('frontend/images/placeholder-rect.jpg') }}" class="w-100 img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
-        <div class="text-center faq-container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <div class="text-center faq-container mt-5"{{-- style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"--}}>
             <h1 class="font-weight-bold">FAQ</h1>
-            <h4 class="font-weight-bold">FREQUENT ASKED QUESTIONS</h4>
+            {{--<h4 class="font-weight-bold">FREQUENT ASKED QUESTIONS</h4>--}}
         </div>
     </div>
     <div class="container pb-4">

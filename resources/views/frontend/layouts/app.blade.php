@@ -98,50 +98,54 @@
 
 <!-- dropify -->
 <link href="{{ asset('plugins/dropify/dist/css/dropify.min.css')}}" rel="stylesheet">
+
+{{-- Google-font --}}
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Niramit:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
     @font-face { 
-        font-family: brandon;
+        font-family: 'Niramit', sans-serif;
         font-weight: 500;
         font-style: normal;
-        src: url('{{ asset('fonts/regular.otf') }}');
+        /* src: url('{{ asset('fonts/regular.otf') }}'); */
     }
 
     @font-face { 
-        font-family: brandon;
+        font-family: 'Niramit', sans-serif;
         font-weight: 600;
         font-style: normal;
-        src: url('{{ asset('fonts/medium.otf') }}');
+        /* src: url('{{ asset('fonts/medium.otf') }}'); */
     }
 
     @font-face { 
-        font-family: brandon;
+        font-family: 'Niramit', sans-serif;
         font-weight: 700;
         font-style: normal;
-        src: url('{{ asset('fonts/bold.otf') }}');
+        /* src: url('{{ asset('fonts/bold.otf') }}'); */
     }
 
     @font-face {
         font-family: rage-italic;
-        src: url('{{ asset('fonts/rage-italic/OH.TTF') }}');
+        /* src: url('{{ asset('fonts/rage-italic/OH.TTF') }}'); */
     }
 
     @font-face { 
-        font-family: yeseva;
+        font-family: 'Lobster', cursive;
         font-weight: 500;
         font-style: normal;
-        src: url('{{ asset('fonts/heading.ttf') }}');
+        /* src: url('{{ asset('fonts/heading.ttf') }}'); */
     }
 
     * {
-        font-family: brandon, "Open Sans", sans-serif;
+        font-family: 'Niramit', sans-serif;
     }
 
     .btn {
-        font-family: brandon, "Open Sans", sans-serif !important;
+        font-family: 'Niramit', sans-serif !important;
     }
 
     h1, h2, h3, h4, h5, h6, .title-name{
-        font-family: yeseva, "Open Sans", sans-serif !important;
+        font-family: 'Lobster', cursive !important;
     }
 
     p:not(.lead) {
